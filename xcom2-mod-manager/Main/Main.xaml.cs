@@ -8,18 +8,10 @@ namespace XCom2ModManager
     /// </summary>
     public partial class MainWindow : Window
     {
-        private ModManagerViewModel vm;
 
         public MainWindow()
         {
-            vm = new ModManagerViewModel();
             InitializeComponent();
-        }
-
-        public ModManagerViewModel ViewModel
-        {
-            get { return vm; }
-            set { vm = value; }
         }
     }
 }
