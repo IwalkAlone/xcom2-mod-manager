@@ -1,0 +1,28 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:XCom2ModManager"
+        xmlns:Main="clr-namespace:XCom2ModManager.Main" x:Class="XCom2ModManager.MainWindow"
+        mc:Ignorable="d"
+        Title="{Binding Title}" Height="600" Width="1000">
+    <Window.DataContext>
+        <Main:ModManagerViewModel/>
+    </Window.DataContext>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+        <ListBox Grid.Column="0" Margin="10"/>
+        <ListBox Grid.Column="1" Margin="10"/>
+        <StackPanel Grid.Column="2">
+            <Button Margin="10" Command="{Binding LaunchClickCommand}" Content="Launch XCOM 2"/>
+            <Button Margin="10" Content="Disable ALL Mods"/>
+            <Button Margin="10" Content="Enable ALL Mods"/>
+            <Button Margin="10" Content="Exit"/>
+        </StackPanel>
+    </Grid>
+</Window>

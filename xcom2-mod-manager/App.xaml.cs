@@ -6,7 +6,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
 
-namespace xcom2_mod_manager
+namespace XCom2ModManager
 {
     /// <summary>
     /// Interaction logic for App.xaml

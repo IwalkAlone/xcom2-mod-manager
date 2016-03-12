@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace xcom2_mod_manager.Properties
+namespace XCom2ModManager.Properties
 {
 
 
